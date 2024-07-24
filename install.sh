@@ -4,6 +4,7 @@ sudo yum update -y
 sudo yum install git httpd wget -y
 sudo systemctl start httpd
 sudo systemctl enable httpd
+sudo yum install vim -y
 sudo groupadd DevOps
 sudo useradd Poly
 sudo yum install unzip -y  #( apt install wget unzip -y )

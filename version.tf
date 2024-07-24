@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = var.region-name
   #secret_key = aws_key_pair.ec2_key
   #access_key = "devopsec3"
   #skip_credentials_validation = true

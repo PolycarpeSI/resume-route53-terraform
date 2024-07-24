@@ -1,9 +1,9 @@
 resource "aws_instance" "Server1" {
-  ami           = "ami-026b57f3c383c2eec"
-  instance_type = "t2.micro"
+  ami           = var.ami-name
+  instance_type = var.instance-type-name
   //security_groups = ["web"]
   security_groups = [aws_security_group.sg.name]
-  key_name        = "devops-ec4"
+  key_name        = "resume-key"
   tags = {
     Name = "Server1"
     Team = "DevOps"
