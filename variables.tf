@@ -28,3 +28,7 @@ variable "resume-DnDB" {
   description = "Here is the name of dynamoDB created in AWS"
   default     = "resume-log"
 }
+
+variable "ENVIRONMENT" {
+  
+}
