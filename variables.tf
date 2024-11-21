@@ -4,7 +4,7 @@ variable "version-name" {
   type        = string
 }
 
-variable "region-name" {
+variable "REGION" {
   description = "Région où se créera l'infrastructure"
   //default     = "us-east-1"
 }
@@ -14,7 +14,7 @@ variable "ami-name" {
   default     = "ami-026b57f3c383c2eec"
 }
 
-variable "instance-type-name" {
+variable "INSTANCE_TYPE" {
   description = "This is the instance type of the instance"
   //default     = "t2.micro"
 }
