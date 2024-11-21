@@ -6,7 +6,7 @@ variable "version-name" {
 
 variable "region-name" {
   description = "Région où se créera l'infrastructure"
-  default     = "us-east-1"
+  //default     = "us-east-1"
 }
 
 variable "ami-name" {
@@ -16,7 +16,7 @@ variable "ami-name" {
 
 variable "instance-type-name" {
   description = "This is the instance type of the instance"
-  default     = "t2.micro"
+  //default     = "t2.micro"
 }
 
 variable "resume-s3" {
