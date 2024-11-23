@@ -5,7 +5,7 @@ pipeline{
             steps{
                 sh "terraform init -no-color"
             }
-            /*post{
+            post{
                 always{
                     echo "========always========"
                 }
@@ -15,10 +15,10 @@ pipeline{
                 failure{
                     echo "========A execution failed========"
                 }
-            }*/
+            }
         }
     }
-    /*post{
+    post{
         always{
             echo "========always========"
         }
@@ -28,5 +28,5 @@ pipeline{
         failure{
             echo "========pipeline execution failed========"
         }
-    }*/
+    }
 }
