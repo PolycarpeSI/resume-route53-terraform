@@ -4,9 +4,9 @@ variable "version-name" {
   type        = string
 }
 
-variable "region-name" {
+variable "REGION" {
   description = "Région où se créera l'infrastructure"
-  default     = "us-east-1"
+  //default     = "us-east-1"
 }
 
 variable "ami-name" {
@@ -14,9 +14,9 @@ variable "ami-name" {
   default     = "ami-026b57f3c383c2eec"
 }
 
-variable "instance-type-name" {
+variable "INSTANCE_TYPE" {
   description = "This is the instance type of the instance"
-  default     = "t2.micro"
+  //default     = "t2.micro"
 }
 
 variable "resume-s3" {
@@ -27,4 +27,8 @@ variable "resume-s3" {
 variable "resume-DnDB" {
   description = "Here is the name of dynamoDB created in AWS"
   default     = "resume-log"
+}
+
+variable "ENVIRONMENT" {
+  
 }

@@ -1,6 +1,6 @@
 resource "aws_instance" "Server1" {
   ami           = var.ami-name
-  instance_type = var.instance-type-name
+  instance_type = var.INSTANCE_TYPE
   //security_groups = ["web"]
   security_groups = [aws_security_group.sg.name]
   key_name        = "resume-key"
