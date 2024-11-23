@@ -10,10 +10,58 @@ pipeline{
                     echo "========always========"
                 }*/
                 success{
-                    echo "========A executed successfully========"
+                    echo "Successfull initialization"
                 }
                 failure{
-                    echo "========A execution failed========"
+                    echo "fail initialization"
+                }
+            }
+        }
+        stage("validate"){
+            steps{
+                sh "terraform validate -no-color"
+            }
+            post{
+                /*always{
+                    echo "========always========"
+                }*/
+                success{
+                    echo "Successfull validation"
+                }
+                failure{
+                    echo "fail validation"
+                }
+            }
+        }
+        stage("format"){
+            steps{
+                sh "terraform fmt -no-color"
+            }
+            post{
+                /*always{
+                    echo "========always========"
+                }*/
+                success{
+                    echo "Successfull format"
+                }
+                failure{
+                    echo "fail format"
+                }
+            }
+        }
+        stage("plan"){
+            steps{
+                sh "terraform fmt -no-color"
+            }
+            post{
+                /*always{
+                    echo "========always========"
+                }*/
+                success{
+                    echo "Successfull plan"
+                }
+                failure{
+                    echo "fail plan"
                 }
             }
         }
