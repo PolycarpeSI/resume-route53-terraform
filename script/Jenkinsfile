@@ -51,7 +51,7 @@ pipeline{
         }
         stage("plan"){
             steps{
-                sh "terraform fmt -no-color"
+                sh "terraform plan -no-color"
             }
             post{
                 /*always{
