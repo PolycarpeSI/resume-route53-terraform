@@ -51,7 +51,7 @@ pipeline{
         }
         stage("plan"){
             steps{
-                sh "terraform plan -no-color"
+                sh "terraform plan -var ${REGION}=${REGION} -var ${INSTANCE_TYPE}=${INSTANCE_TYPE} -var ${ENVIRONMENT}=${ENVIRONMENT} -no-color"
             }
             post{
                 /*always{
